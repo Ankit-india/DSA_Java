@@ -1,4 +1,4 @@
-package src.assignments.stacksAndQueue;
+package src.assignments.stacksAndQueue.stack;
 
 public class CustomStack {
     protected int[] data;

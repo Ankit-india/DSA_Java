@@ -1,4 +1,4 @@
-package src.assignments.sorting;
+package src.assignments.strings;
 
 import java.util.ArrayList;
 import java.util.List;

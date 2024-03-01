@@ -24,8 +24,8 @@ class FindIndexesOfSubArrayWithGivenSum {
             s = br.readLine().trim().split(" ");
             for(int i = 0; i < n; i++)
                 a[i] = Integer.parseInt(s[i]);
-            Solution obj = new Solution();
-            ArrayList<Integer> res = obj.subarraySum(a, n, k);
+//            Solution obj = new Solution();
+            ArrayList<Integer> res = subarraySum(a, n, k);
             for(int ii = 0;ii<res.size();ii++)
                 ot.print(res.get(ii) + " ");
             ot.println();

@@ -19,7 +19,7 @@ public class KthLargestNumber {
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
 
-            int[] ans = new Solution().kLargest(arr, n, k);
+            int[] ans = KLargest.kLargest(arr, n, k);
             for (int x : ans) {
                 System.out.print(x + " ");
             }
@@ -31,8 +31,8 @@ public class KthLargestNumber {
 // } Driver Code Ends
 
 
-class Solution {
-    int[] kLargest(int[] arr, int n, int k) {
+class KLargest {
+    static int[] kLargest(int[] arr, int n, int k) {
         // code here
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         
@@ -50,7 +50,7 @@ class Solution {
         reverse(ans);
         return ans;
     }
-    private void reverse(int[] ans) {
+    private static void reverse(int[] ans) {
         int i = 0;
         int j = ans.length - 1;
         while(i < j) {
